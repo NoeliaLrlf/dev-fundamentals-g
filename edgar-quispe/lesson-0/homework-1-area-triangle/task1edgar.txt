@@ -37,4 +37,3 @@ Algoritmo
 4. calc_area(x1, y1; x2, y2; caseX),arearec
 	4.1 at=[(x1y2)+(x2y3)+(x3y1)]-[(x1y3)+(x3y2)+(x2y1)]/2
 	4.2 arearec=at*2
-
