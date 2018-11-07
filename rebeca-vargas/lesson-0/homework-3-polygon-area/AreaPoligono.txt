@@ -1,0 +1,23 @@
+Area del poligono:
+Analisis matematico:
+
+Dadas la longitud y numero de lados:
+
+Se puede deducir al ángulo igual a: 360/n
+Se puede deducir la apotema igual a: (lado/2)/tan ángulo/2)
+Se puede deducir la superficie del triangulo igual a: St = (lado X apotema)/2
+Se puede deducir la superficie del polígono igual a Sp = (lado X n)
+
+Reemplazando valores:
+Sp = ((lado x lado) x n)/(2 x tan (360/2n))
+
+Algoritmo:
+1.	Leer valores(long, lado)
+2.	Calcular Area Poligono(l,n); sp
+3.	Mostrar resultado
+
+calcularAreaPoligono(long, lado)
+{
+Sp = ((lado x lado) x n)/(2 x tan (360/2n))
+return Sp;
+}
