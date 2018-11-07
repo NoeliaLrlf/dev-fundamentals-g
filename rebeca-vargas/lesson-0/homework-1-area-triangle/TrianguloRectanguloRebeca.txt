@@ -1,0 +1,49 @@
+Problema: Calcular área de un triángulo rectángulo.
+
+Analisis Logico Matematico:
+
+Dada la formula A = (b*a)/2
+
+Se puede deducir que el valor de b es igual a: b = X2 – X1
+
+Valor de a es igual a:  a = Y2 – Y1
+
+Algortimo:
+
+1. Leer x1, x2, y1,y2
+2. Calcular el valor de b
+                2.1 Verificar si b es negativo (else sacar valor abs)
+3. Calcular el valor de a
+                3.1 Verificar si a es negativo (else sacar valor abs)
+4. Calcular área del triángulo rectángulo 
+5. Mostrar el área.
+
++ int calcValueB(x1, x2);b
+{
+                int b = x2 - x1;
+                If (b < 0 )
+                                b = b * (-1); // value abs 
+                return b;              
+}
+
++ int calcValueA(y1, y2);a
+{
+                int a = y2 - y1;
+                If (a < 0 )
+                                a= a * (-1); // value abs  
+                return a;               
+}
+
++ Int calcArea(a, b); area
+{
+                int area = (a*b)/2
+                return area;
+} 
+
++ void showArea(area)
+{
+                If (area > 0)
+                                print “Area of triangle rectangle is :” + area ;
+                Else
+                                print ”Error! Area of triangle rectangle is equal or less than 0”;
+} 
