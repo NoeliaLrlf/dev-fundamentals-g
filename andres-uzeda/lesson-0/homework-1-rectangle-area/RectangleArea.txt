@@ -1,4 +1,4 @@
-/*/*/*/*/*/*/*/*/*
+﻿/*/*/*/*/*/*/*/*/*
 mathematic logic model
 Rectangle Area
 Area = w × h
