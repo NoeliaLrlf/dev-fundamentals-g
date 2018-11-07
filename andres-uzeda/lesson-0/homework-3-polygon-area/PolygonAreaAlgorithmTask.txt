@@ -1,0 +1,25 @@
+/*/*/*/*/*/*/*/*/*
+mathematic logic model
+Pythagorean theorem
+c2=a2+b2
+apothem
+b2=c2-a2
+/*/*/*/*/
+Algorithm
+ApothemMain(numberOfSides,widthOfASide):apothem
+	1 Read numberOfSides, widthOfASide
+	2 Calculate Apothem, CalculateApothem(numberOfSides, widthOfASide):apothem
+	3 Show Apothem, Show(apothem)
+
+CalculateApothem(numberOfSides, widthOfASide):apothem
+	1 Decimal plusOfSides
+	2 Decimal sideA = widthOfASide/2
+	3 plusOfSides = PotencyTwo(widthOfASide) - PotencyTwo(sideA)
+	4 apothem = √plusOfSides //it is a square root
+		
+PotencyTwo(number)PotencyNumber
+	1 PotencyNumber = number*number
+
+Show(apothem)
+	1 print "The apothem is : "  apothem
+	2 End
