@@ -1,0 +1,32 @@
+Bisiesto:
+Análisis matemático:
+p&(~q||o)
+Condiciones:
+P divisible entre 4
+Q no divisible entre 100
+R divisible entre 400
+
+Algortimo:
+1.	Leer año 
+2.	Verificar si es divisible
+3.	Calcular si es Bisiesto
+4.	Mostrar resultado
+
+esDivisible(año, div)//div 4 ||100 ||400
+{
+                i = año / div;
+i = i*div;
+i = año -i;
+if(i == 0)
+                return 0;
+else
+                return 1;
+}
+
+esBisiesto(año)
+{
+If ((año % 4 == 0) && ((año % 100 != 0) || (año % 400 == 0)))
+                print “Año” + año + “es bisiesto”
+else
+                print “Año” + año + “no es bisiesto”
+}
