@@ -28,7 +28,7 @@ class Main {
        myContactManager.addContact(contact04);
        myContactManager.addContact(contact05);
 
-       Contact friend = myContactManager.searchContact("Pamela Hermosa");
+       Contact friend = myContactManager.searchContact("Pamela Garcia");
 
        System.out.println("Name: " + friend.name + "\tPhone number: " + friend.phoneNumber);
     }
