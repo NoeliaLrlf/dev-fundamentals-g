@@ -137,7 +137,7 @@ public class Car {
     public double moveADistanceWithCar(double distance) {
         this.setDistance(distance);
         this.powerOnTheCar();
-        gasoline = this.getGasoline()-this.calculateGasolineRequired(distance);
+        this.setGasoline(this.getGasoline()-this.calculateGasolineRequired(distance));
         this.powerOffTheCar();
         return gasoline;
     }

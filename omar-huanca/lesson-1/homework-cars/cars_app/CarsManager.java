@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 /**
- * This class is to manage Contacts
+ * This class is to manage Cars
  *
  * @author Omar Limbert Huanca Sanchez
  * @version 1.0.
@@ -22,7 +22,7 @@ public class CarsManager {
     }
 
     /**
-     * This method is to add a Contact in to list of carsList
+     * This method is to add a Car in to list of carsList
      *
      * @param carToAdd car to add in the list
      */
@@ -37,8 +37,11 @@ public class CarsManager {
      * @return Car
      */
     public Car startPerformanceTest(double distance) {
+        // moving distance
+        carsList.forEach(car -> car.moveADistanceWithCar(distance));
+        // comparing gasoline
         return carsList.stream()
-                .min(Comparator.comparing(car -> car.moveADistanceWithCar(distance)))
+                .max(Comparator.comparing(Car::getGasoline))
                 .orElseThrow(NoSuchElementException::new);
     }
 
