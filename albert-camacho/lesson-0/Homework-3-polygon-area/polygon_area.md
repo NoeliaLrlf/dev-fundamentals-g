@@ -1,3 +1,20 @@
+**MATHEMATICS-LOGIC MODEL**
+
+1. Polygon area formula:
+```
+AREA = 1/2 x perimeter x apothem
+
+perimeter = sides * num_sides
+```
+2. Apothem formula:
+```
+a = side / (2 * tangent θ)
+
+θ = 360° / (2 * num_sides)
+```
+
+**ALGORITHM**
+```
 PolygonArea(lado, num_lados)
 
 1. Leer lado, num_lados
@@ -20,3 +37,4 @@ area(perimetro, apotema): area
 
 printArea(area, num_lados)
 1. print("Area del poligono de " + num_lados + " lados es: " + area)
+```

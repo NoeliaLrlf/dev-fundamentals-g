@@ -1,3 +1,17 @@
+**MATHEMATICS-LOGIC MODEL**
+
+Leap Year:
+- Is divisible by 4
+- Is divisible by 100
+- Is divisible by 400
+
+```
+p y [¬q ó r]
+```
+
+
+**ALGORITHM**
+```
 LeapYear(year)
 
 1. Leer year
@@ -17,3 +31,5 @@ mod(a, b): result
     return 0
 4. Sino
     return (a - m)
+    
+```
